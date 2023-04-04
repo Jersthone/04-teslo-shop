@@ -8,5 +8,5 @@ export const fileNamer = ( req: Express.Request, file: Express.Multer.File, call
 
     const fileName = `${uuid()}.${fileExtension}`;
 
-    callback(null, 'nuevo nombre');
+    callback(null, fileName);
 }
